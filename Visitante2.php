@@ -1,4 +1,6 @@
 <?php 
+
+if(isset($_COOKIE['nome']) && isset( $_COOKIE['idade']) ){
 echo "<span style='color:red;'><h3><b>*******************************Pagina Visitante 2*******************************</b></h3></span><br>";
 if (!isset($_COOKIE['nome']) && !isset($_COOKIE['idade'])) {
 echo "<script>alert('As COOKIE passaram de validade(expiraram).\\n\\n\\Eles deixaram de existir!');</script>";
@@ -23,6 +25,10 @@ echo "<a href='Formulario.html'><h5><b>Voltar</b></h5></a>";
 echo "<a href='principal.php'><h5><b>Principal</b></h5></a>";
 echo "<a href='Visitante1.php'><h5><b>Visitante 1</b></h5></a>";
 
-
+}
 	}
+	else{
+	echo "<a href='Formulario.html'><h5><b>Voltar</b></h5></a>";
+}
+
  ?>
